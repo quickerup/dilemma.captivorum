@@ -1,4 +1,9 @@
-import os                                                                               import logging                                                                          import asyncio                                                                          import random                                                                           from dotenv import load_dotenv                                                          from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
+import os
+import logging
+import asyncio
+import random
+from dotenv import load_dotenv
+from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 from telegram.constants import ParseMode
 
@@ -408,7 +413,7 @@ def outcome_details(my_choice, opp_choice, opp_name, my_signal, opp_signal, stak
 
     else:
         return "you_got_got", (
-            "━━━━━━━━━━━━━━━━━━━\n"
+            "━���━━━━━━━━━━━━━━━━━\n"
             "🩸 <b>YOU WERE ROBBED</b>\n"
             "━━━━━━━━━━━━━━━━━━━\n\n"
             f"{sig}\n\n"
